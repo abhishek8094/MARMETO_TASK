@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img{
+  height: 1.5rem;
+}
+
+.brand-name{
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.nav-left img {
+  width: 3rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-icon {
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.hero-section {
+  background-image: url(./public/banner.svg);
+  height: 20rem;
+  text-align: center;
+}
+
+.section-center-part {
+  position: relative;
+  top: 5rem;
+}
+
+.section-center-part img {
+  width: 3rem;
+}
+
+.section-center-part h3 {
+  font-size: xx-large;
+  margin: 0rem;
+  padding: 0.5rem;
+}
+
+.section-center-part p {
+  font-weight: 600;
+  display: inline-block;
+  margin: 0.3rem;
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+  flex-wrap: wrap;
+}
+
+.cart-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #faf3ea;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.cart-list li {
+  list-style: none;
+}
+
+.sub-bold {
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.total-bold {
+  margin-top: 0.1rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.sub-money {
+  color: #9f9f9f;
+}
+
+.totals {
+  text-align: center;
+  margin: 1rem;
+}
+
+.subtotal {
+  margin: 1rem;
+}
+
+.cart-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 42rem;
+}
+
+.cart-totals {
+  width: 100%;
+  max-width: 20rem;
+  margin-top: 0.8rem;
+  padding: 2rem;
+  background-color: #faf3ea;
+  border-radius: 10px;
+}
+
+.total-money {
+  color: #b88e2f;
+  font-size: larger;
+}
+
+.cart-totals h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.btn {
+  text-align: center;
+}
+
+.checkout-btn {
+  color: black;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #faf3ea;
+  border: 2px solid black;
+  max-width: 10rem;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #faf3ea;
+  padding: 3rem;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  position: relative;
+  bottom: 0.5rem;
+  margin: 0.5rem;
+}
+
+.feature-item img {
+  height: 3rem;
+}
+
+.feature-item-content h5 {
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+.feature-item-content p {
+  font-size: 14px;
+  color: #777;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .second-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-list,
+  .cart-products {
+    width: 100%;
+  }
+
+  .cart-totals {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .checkout-btn {
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero-section {
+    height: 15rem;
+  }
+
+  .section-center-part img {
+    width: 2rem;
+  }
+
+  .second-section {
+    margin: 2rem;
+  }
+
+  .footer-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 10rem;
+  }
+
+  .second-section {
+    margin: 1rem;
+  }
+
+  .cart-list,
+  .cart-products {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkout-btn {
+    font-size: 0.9rem;
+  }
+}
