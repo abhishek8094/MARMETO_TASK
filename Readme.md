@@ -31,5 +31,7 @@ Task Breakdown:
     - **Currency Formatting:** Display prices in Indian Rupees (₹) with proper formatting.
 
  
+![Capture123](https://github.com/user-attachments/assets/9aac5cd3-7223-4dbf-9656-447816ec4a00)
+![Screenshot (36)](https://github.com/user-attachments/assets/e88cb6bc-b95a-4f88-a32f-c93b78464527)
 
 💙
